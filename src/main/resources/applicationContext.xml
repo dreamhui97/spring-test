@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+   <context:component-scan base-package="com.bjpowernode"/>
+   <context:component-scan base-package="com.testZhu"/>
+
+    
+   <!-- <import resource="classpath:school.xml"/>
+    <import resource="classpath:student.xml"/>-->
+    
+   <!-- <bean id="student" class="com.bjpowernode.Student2" autowire="byName">
+        <property name="age" value="20"/>
+        <property name="name" value="张三"/>
+       &lt;!&ndash; <property name="school" ref="school"/>&ndash;&gt;
+    </bean>-->
+    <!--<bean id="student" class="com.bjpowernode.Student2" autowire="byType">
+        <property name="age" value="20"/>
+        <property name="name" value="张三"/>
+        &lt;!&ndash; <property name="school" ref="school"/>&ndash;&gt;
+    </bean>
+
+    <bean id="school" class="com.bjpowernode.School2">
+        <property name="name" value="清华"/>
+        <property name="adress" value="北京"/>
+    </bean>
+-->
+  <!--  <bean id="school2" class="com.bjpowernode.School2">
+        <constructor-arg name="adress" value="上海"/>
+        <constructor-arg name="name" value="复旦"/>
+    </bean>-->
+    <!--<bean id="mydate" class="java.util.Date">
+        <property name="time" value="8364297429" />&lt;!&ndash;setTime(8364297429)&ndash;&gt;
+    </bean>-->
+
+ <!--   <bean id="student2" class="com.bjpowernode.Student2">
+        <constructor-arg name="age" value="11"/>
+        <constructor-arg name="name" value="李四"/>
+        <constructor-arg name="school" ref="school2"/>
+    </bean>-->
+</beans>
